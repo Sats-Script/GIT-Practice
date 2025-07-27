@@ -1,1 +1,1 @@
-GIT Branching strategy
+Conflict test from conflict branch
