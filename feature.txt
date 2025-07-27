@@ -1,1 +1,1 @@
-GIT Branching strategy
+merge test from main branch
