@@ -1,1 +1,4 @@
 merge test from main branch
+=======
+Conflict test from conflict branch
+
