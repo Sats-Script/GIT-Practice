@@ -1,3 +1,4 @@
-GIT Branching strategy
+T Branching strategy
 merged  test from main branch
-
+ge test from main branch
+lict test from conflict branch
