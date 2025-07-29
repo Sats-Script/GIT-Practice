@@ -1,4 +1,4 @@
-merge test from main branch
-=======
-Conflict test from conflict branch
-
+T Branching strategy
+merged  test from main branch
+ge test from main branch
+lict test from conflict branch
