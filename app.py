@@ -1,1 +1,1 @@
-print("Sum:", 2 + 4)
+print("Sum:", 2 + 5)
