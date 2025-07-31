@@ -4,7 +4,7 @@ pipeline {
             stage('Build') {
                 steps{
                     sh '''
-                    a=15
+                    a=1516
                     b=1256 
                     c=$((a+b))
                     echo "Print the value of c is $c"
