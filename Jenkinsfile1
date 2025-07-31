@@ -1,0 +1,29 @@
+pipeline {
+    agent any 
+        stages{
+            stage('Build') {
+                steps{
+                    sh '''
+                    a=15
+                    b=1256 
+                    c=$((a+b))
+                    echo "Print the value of c is $c"
+                    '''
+                }
+            }
+
+            stage ('Testing') {
+                steps{
+                    echo "Testing its all good"
+                }
+            }
+
+            stage ('Deploy') {
+                steps{
+                    echo "Pipeline addition successful"
+                }
+            }
+
+        }
+    
+}
