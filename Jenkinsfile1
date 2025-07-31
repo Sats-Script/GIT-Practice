@@ -5,7 +5,7 @@ pipeline {
                 steps{
                     sh '''
                     a=151656233
-                    b=1000000
+                    b=-1000000
                     c=$((a+b))
                     echo "Print the value of c is $c"
                     '''
