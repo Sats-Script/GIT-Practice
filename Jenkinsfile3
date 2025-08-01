@@ -11,7 +11,7 @@ pipeline{
             def a , b, c
             if (params.PickEnvironment == 'dev') {
             a=15
-            b=2025
+            b=2000
             c=a+b
             echo "Executing dev steps $c" }
             else if (params.PickEnvironment == 'stage'){
