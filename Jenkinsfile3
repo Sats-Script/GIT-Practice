@@ -1,0 +1,30 @@
+pipeline{
+    agent any
+      parameters {
+        choice(name: 'PickEnvironment' , choices: ['dev', 'stage' , 'Prod'], description : 'Environment selection')
+      }
+     stages{
+        stage('Deploy'){
+            sh '''
+            echo "Deploying to ${params.PickEnvironment} Environment"
+            if (params.PickEnvironment == 'dev') {
+            a=15
+            b=2025
+            c=$((a+b))
+            echo "Executing dev steps $c" }
+            else if (params.PickEnvironment == 'stage'){
+            a=25
+            b=600
+            c=$((a+b))
+            echo "Executing ${Pick.Environment} steps ... $c " }
+            else if (params.PickEnvironment == 'Prod') {
+            a=85
+            b=10000
+            c=$((a+b))
+            echo "Executins ${params.PickEnvironment} steps..... $c }
+            '''
+
+        }
+        
+    }
+}
