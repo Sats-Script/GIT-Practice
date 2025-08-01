@@ -16,7 +16,7 @@ pipeline{
             echo "Executing dev steps $c" }
             else if (params.PickEnvironment == 'stage'){
             a=6
-            b=600
+            b=700
             c=a+b
             echo "Executing ${params.PickEnvironment} steps ... $c " }
             else if (params.PickEnvironment == 'Prod') {
