@@ -8,21 +8,22 @@ pipeline{
             steps{
             echo "Deploying to ${params.PickEnvironment} Environment"
             script {
+            def a , b, c
             if (params.PickEnvironment == 'dev') {
             a=15
             b=2025
-            c=$((a+b))
+            c=a+b
             echo "Executing dev steps $c" }
             else if (params.PickEnvironment == 'stage'){
-            a=25
+            a=6
             b=600
-            c=$((a+b))
+            c=a+b
             echo "Executing ${params.PickEnvironment} steps ... $c " }
             else if (params.PickEnvironment == 'Prod') {
             a=85
             b=10000
-            c=$((a+b))
-            echo "Executins ${params.PickEnvironment} steps..... $c }
+            c=a+b
+            echo "Executins ${params.PickEnvironment} steps..... $c" }
             }
             }
 
