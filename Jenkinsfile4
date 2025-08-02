@@ -5,7 +5,7 @@ pipeline{
         booleanParam(name: 'Run_Tests' , defaultValue: 'false' , description: 'Pick if you want to run')
         choice(name: 'Environ' , choices:['dev', 'QA', 'Prod'] , description: 'Pick up the environ')
         password(name:'Security', defaultValue:'' , description:'Enter Admin Password')
-        text(name: 'Release_Notes',deafaultValue: '' , description:'Enter Release Notes')
+        text(name: 'Release_Notes',defaultValue: '' , description:'Enter Release Notes')
     }
     stages{
         stage('Print Inputs') {
