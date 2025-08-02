@@ -14,8 +14,8 @@ pipeline{
                     echo "Selected environ is ${params.Environ}"
                     echo "Deplying Version is ${params.Version}"
                     echo "for test run ${params.Run_Tests}"
-                    echo "Security Entered password is ${Security}"
-                    echo "Here the data of Relese notes:\n ${Release_Notes}"
+                    echo "Security Entered password is ${params.Security}"
+                    echo "Here the data of Relese notes:\n ${params.Release_Notes}"
                 }
             }
         }
